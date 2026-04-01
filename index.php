@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Input Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,7 +22,7 @@ class UserRegistration {
     }
 
     public function displayOutput() {
-        echo "<div style='margin-top: 20px;'>";
+        echo "<div class='output'>";
         echo "<p>Hi, my name is " . $this->firstName . " " . $this->lastName . "</p>";
         echo "<p>Phone Number : " . $this->phoneNumber . "</p>";
         echo "<p>Address : " . $this->address . "</p>";
@@ -40,22 +41,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<h2>Form Pendaftaran</h2>
-<form method="POST" action="">
-    <label>Firstname</label><br>
-    <input type="text" name="firstname" required><br><br>
+<div class="card">
+    <h2>Register Form</h2>
+    <form method="POST" action="">
+        <label>Firstname</label><br>
+        <input type="text" name="firstname" required><br><br>
 
-    <label>Lastname</label><br>
-    <input type="text" name="lastname" required><br><br>
+        <label>Lastname</label><br>
+        <input type="text" name="lastname" required><br><br>
 
-    <label>Phone Number</label><br>
-    <input type="text" name="phone" required><br><br>
+        <label>Phone Number</label><br>
+        <input type="text" name="phone" required><br><br>
 
-    <label>Address</label><br>
-    <textarea name="address" required></textarea><br><br>
+        <label>Address</label><br>
+        <textarea name="address" required></textarea><br><br>
 
-    <button type="submit">Submit</button>
-</form>
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
 <?php
 if (isset($user)) {

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a4d9ff;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.card {
+    background: #6fbbf5;
+    border-radius: 16px;
+    padding: 36px;
+    width: 360px;
+    margin-right: 60px;
+}
+
+.card h2 {
+    text-align: center;
+    color: #234C6A;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+}
+
+.card input,
+.card textarea {
+    width: 100%;
+    padding: 9px 12px;
+    margin-bottom: 12px;
+    border: 1.5px solid #5fa1cf;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.card textarea {
+    resize: none;
+    height: 65px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    background: #1B3C53;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.output {
+    background: #6fbbf5;
+    border-radius: 16px;
+    padding: 36px;
+    width: 360px;
+}
+
+.output h2 {
+    text-align: center;
+    color: #234C6A;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+}
+
+.output-field {
+    width: 100%;
+    padding: 9px 12px;
+    margin-bottom: 12px;
+    border: 1.5px solid #5fa1cf;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    background: white;
+    color: #1B3C53;
+}
+
+.output a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #1B3C53;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 4px;
+}
